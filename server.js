@@ -51,6 +51,7 @@ app.post('/authenticate', (req, res) => {
   res.status(authData.status).send(authData.body)
 })
 
+// Default port 3001
 const PORT = process.env.PORT || 3001
 app.listen(PORT, err => {
   if (err) {
